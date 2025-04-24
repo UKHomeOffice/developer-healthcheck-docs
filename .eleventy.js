@@ -27,12 +27,17 @@ export default function (eleventyConfig) {
             logotype: {
                 html:
                     '<span class="govuk-header__logotype">' +
-                    '  <img src="'+pathPrefix+'assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">' +
+                    '  <img src="/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">' +
                     '  <span class="govuk-header__logotype-text">Home Office</span>' +
                     '</span>'
             },
             productName: 'Developer Healthcheck Workshops',
             organisationName: 'Home Office'
+        },
+        footer: {
+            copyright: {
+                html: '© <a class="govuk-footer__link" href="https://github.com/UKHomeOffice/developer-healthcheck-docs/blob/main/LICENSE.md">Crown Copyright (Home Office)</a>'
+            },
         },
         pathPrefix,
         url,
