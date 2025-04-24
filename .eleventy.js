@@ -1,6 +1,13 @@
 import govukEleventyPlugin from "@x-govuk/govuk-eleventy-plugin";
 
 export default function (eleventyConfig) {
+    const url = process.env.GITHUB_ACTIONS
+        ? 'https://ukhomeoffice.github.io/developer-healthcheck-docs/'
+        : '/';
+
+    const pathPrefix = process.env.GITHUB_ACTIONS
+        ? '/developer-healthcheck-docs/'
+        : '/';
 
     eleventyConfig.addPassthroughCopy({ "pubs/assets/logos": "assets/logos"});
     eleventyConfig.addPassthroughCopy({ "pubs/assets/images": "assets/images"});
@@ -20,18 +27,21 @@ export default function (eleventyConfig) {
             logotype: {
                 html:
                     '<span class="govuk-header__logotype">' +
-                    '  <img src="/assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">' +
+                    '  <img src="'+pathPrefix+'assets/logos/ho_logo.svg" height="34px" alt="Home Office Logo">' +
                     '  <span class="govuk-header__logotype-text">Home Office</span>' +
                     '</span>'
             },
             productName: 'Developer Healthcheck Workshops',
             organisationName: 'Home Office'
         },
+        pathPrefix,
+        url,
     }
 
     eleventyConfig.addPlugin(govukEleventyPlugin, xgovukPluginOptions);
 
     return {
+        pathPrefix,
         dataTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',
         markdownTemplateEngine: 'njk',
