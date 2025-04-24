@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+
+html.govuk-template {
+  background-color: #fff;
+}
+
+body, .govuk-template__body {
+  background-color: #f5f5f5;
+  color: #0b0c0c;
+}
+
+.govuk-header {
+  background-color: #fff;
+  color: #0b0c0c;
+
+  .govuk-header__container {
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .govuk-header__link, .govuk-header__link:visited {
+    color: #0b0c0c;
+  }
+
+  .govuk-header__logo img {
+    vertical-align: bottom;
+  }
+
+  .app-site-search {
+    @media (max-width: 62.25em) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .app-site-search__input {
+      border: 1px #cbcbcb solid;
+    }
+  }
+}
+
+.govuk-footer {
+  background-color: #fff;
+  color: #0b0c0c;
+  border: none;
+  padding-top: 0;
+
+  .govuk-width-container {
+    border-top: 10px solid #cbcbcb;
+    padding-top: 45px;
+  }
+}
+
+// Update contrast to WCAG AA for code blocks
+.x-govuk-code__string,
+.x-govuk-code__doctag {
+  color: #d13118;
+}
+
+.x-govuk-code__comment,
+.x-govuk-code__quote {
+  color: #696e73;
+}
+
+.x-govuk-code__type,
+.x-govuk-code__class .x-govuk-code__title {
+  color: #6669a4;
+}
+
+.x-govuk-related-navigation .govuk-link[aria-current] {
+  font-weight: bold;
+}
+
+// Allows feedback banner to have correct bottom margin.
+.x-govuk-masthead {
+  margin-top: 0;
+}
+
+.govuk-header label.govuk-visually-hidden {
+  color: black;
+}
+
+.govuk-breadcrumbs__link {
+  display: inline-block;
+  min-height: 24px;
+}

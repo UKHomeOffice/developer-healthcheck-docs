@@ -1,0 +1,37 @@
+{
+  "name": "eleventy-docs-as-code-template",
+  "version": "1.0.0",
+  "description": "A template for starting a docs-as-code static site. This uses eleventy as the site generator, with the x-govuk Eleventy plugin, and Home Office branding.",
+  "keywords": [
+    "docs-as-code",
+    "eleventy",
+    "home office"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//UKHomeOffice/eleventy-docs-as-code-template.git"
+  },
+  "license": "MIT",
+  "contributors": [
+    {"name": "Jeff Horton"}
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "engines": {
+    "node": ">=22.0.0 <23.0.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@x-govuk/govuk-eleventy-plugin": "^6.7.2"
+  },
+  "devDependencies": {
+    "axe-core": "^4.10.3",
+    "cypress-axe": "^1.6.0",
+    "cypress": "^14.1.0"
+  }
+}
