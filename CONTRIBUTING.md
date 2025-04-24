@@ -1,3 +1,3 @@
 # Contribution guide
 
-Describe how people can contribute to this project.
+Please raise a PR with content suggestions

@@ -1,8 +1,8 @@
 ---
 homepage: true
 layout: product
-title: Home Office docs-as-code template
-description: A template for starting a docs-as-code static site
+title: Developer Healthcheck Workshops
+description: Documentation about developer healthcheck workshops
 startButton:
   href: "/get-started/"
   text: Get Started

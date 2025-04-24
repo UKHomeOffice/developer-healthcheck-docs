@@ -3,6 +3,7 @@ import govukEleventyPlugin from "@x-govuk/govuk-eleventy-plugin";
 export default function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy({ "pubs/assets/logos": "assets/logos"});
+    eleventyConfig.addPassthroughCopy({ "pubs/assets/images": "assets/images"});
 
     const xgovukPluginOptions = {
         // Home Office branding
@@ -23,13 +24,8 @@ export default function (eleventyConfig) {
                     '  <span class="govuk-header__logotype-text">Home Office</span>' +
                     '</span>'
             },
-            productName: 'Eleventy docs-as-code template',
-            organisationName: 'Home Office',
-            search: {
-                label: 'Search site',
-                indexPath: '/search.json',
-                sitemapPath: '/sitemap.html'
-            }
+            productName: 'Developer Healthcheck Workshops',
+            organisationName: 'Home Office'
         },
     }
 

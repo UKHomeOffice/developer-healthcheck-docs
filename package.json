@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-docs-as-code-template",
+  "name": "ho-developer-healthcheck-docs",
   "version": "1.0.0",
-  "description": "A template for starting a docs-as-code static site. This uses eleventy as the site generator, with the x-govuk Eleventy plugin, and Home Office branding.",
+  "description": "Documentation covering developer healthchecks at the Home Office",
   "keywords": [
     "docs-as-code",
     "eleventy",
@@ -9,11 +9,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com//UKHomeOffice/eleventy-docs-as-code-template.git"
+    "url": "https://github.com/UKHomeOffice/developer-healthcheck-docs"
   },
   "license": "MIT",
   "contributors": [
-    {"name": "Jeff Horton"}
+    {"name": "Robert Deniszczyc"}
   ],
   "type": "module",
   "scripts": {
