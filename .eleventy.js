@@ -1,4 +1,4 @@
-import govukEleventyPlugin from "@x-govuk/govuk-eleventy-plugin";
+import { govukEleventyPlugin } from '@x-govuk/govuk-eleventy-plugin'
 
 export default function (eleventyConfig) {
     const url = process.env.GITHUB_ACTIONS
@@ -53,8 +53,6 @@ export default function (eleventyConfig) {
         dir: {
             // The folder where all your content will live:
             input: 'pubs',
-            // Use layouts from the x-govuk plugin
-            layouts: '../node_modules/@x-govuk/govuk-eleventy-plugin/layouts'
         }
     }
 }
