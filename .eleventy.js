@@ -35,6 +35,14 @@ export default function (eleventyConfig) {
             organisationName: 'Home Office'
         },
         footer: {
+            meta: {
+                items: [
+                    {
+                        href: 'https://github.com/UKHomeOffice/developer-healthcheck-docs/',
+                        text: 'GitHub repository'
+                    }
+                ]
+            },
             copyright: {
                 html: '© <a class="govuk-footer__link" href="https://github.com/UKHomeOffice/developer-healthcheck-docs/blob/main/LICENSE.md">Crown Copyright (Home Office)</a>'
             },
