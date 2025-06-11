@@ -1,3 +1,17 @@
+// Use GOV.UK Frontend
+$_font-family: 'Roboto', system-ui, sans-serif;
+@use "pkg:govuk-frontend/dist/govuk" with (
+  $govuk-font-family: $_font-family,
+  $govuk-brand-colour: #8822aa,
+  $govuk-link-colour: #660088,
+  $govuk-link-hover-colour: #440066,
+  $govuk-link-visited-colour: #333366,
+  $govuk-page-width: 1100px
+);
+
+// Use GOV.UK Eleventy Plugin
+@use "pkg:@x-govuk/govuk-eleventy-plugin";
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @font-face {
