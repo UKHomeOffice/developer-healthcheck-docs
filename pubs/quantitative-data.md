@@ -1,7 +1,7 @@
 ---
 layout: sub-navigation
 title: Quantitative data
-order: 3
+order: 30
 ---
 
 The indicators are scored by the team against a Red/Amber/Green (RAG) scale, this allows for quantitative data to be collected and provides a general overview of how the team feels it is performing against an indicator.
