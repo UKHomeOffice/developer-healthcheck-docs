@@ -1,7 +1,7 @@
 ---
 layout: sub-navigation
 title: Running a workshop
-order: 5
+order: 50
 ---
 
 [[toc]]
