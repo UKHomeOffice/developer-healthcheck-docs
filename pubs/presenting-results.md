@@ -4,6 +4,8 @@ title: Presenting results
 order: 7
 ---
 
+[[toc]]
+
 After collating and analysing the data, present the key identified themes back to the team.
 
 The themes should be complimented with objectives to improve situations where there are identified issues.
