@@ -1,7 +1,7 @@
 ---
 layout: sub-navigation
 title: Get started
-order: 1
+order: 10
 ---
 
 [[toc]]
