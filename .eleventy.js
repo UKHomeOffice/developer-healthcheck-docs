@@ -32,8 +32,8 @@ export default function (eleventyConfig) {
                     '</span>'
             },
             productName: 'Developer Healthcheck Workshops',
-            organisationName: 'Home Office'
         },
+        titleSuffix: 'Home Office',
         footer: {
             meta: {
                 items: [
