@@ -109,3 +109,8 @@ body, .govuk-template__body {
   background: none;
 }
 
+.govuk-template--rebranded .govuk-header__link--homepage,
+.govuk-template--rebranded .govuk-header,
+.govuk-template--rebranded .govuk-header__link--homepage:not(:focus) {
+  background: white;
+}
