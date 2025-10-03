@@ -45,7 +45,7 @@ jobs:
       - name: Build eleventy
         working-directory: ./
         run: |
-          npm ci
+          npm ci --ignore-scripts
           npm run build
 
       - name: Upload artifact
